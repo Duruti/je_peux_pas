@@ -1,0 +1,9 @@
+*, ::before, ::after{
+   box-sizing: border-box;
+}
+.excuse{
+   padding: 10px;
+   width: 50vw;
+   min-height:200px ;
+   background-color: brown;
+}
