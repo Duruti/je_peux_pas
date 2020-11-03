@@ -1,9 +1,112 @@
 *, ::before, ::after{
    box-sizing: border-box;
 }
-.excuse{
-   padding: 10px;
-   width: 50vw;
-   min-height:200px ;
-   background-color: brown;
+*:focus {outline:none} 
+
+body{
+   position: relative;
+   width: 100%;
+   min-height: 700px;
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Oxygen', sans-serif;
+   background-color: #222120;
+   background-image: url(website-design-slider-background-stockton.jpg);
+   background-size: auto;
+   background-position: center;
+   background-repeat: no-repeat;
 }
+a{
+   text-decoration: none;
+   color : #698996;
+   ;
+}
+h1,h2{
+  
+   text-align: center;
+   /* padding: 10px; */
+   color : #adaead;
+   text-shadow: 4px 4px 5px #222120;
+}
+h1{
+   margin-top: 10px;
+   font-size: 50px;
+   color : #698996;
+   font-family: 'Wendy One', sans-serif;
+   text-shadow: 4px 4px 5px #222120;
+
+}
+
+.btn{
+   margin: 25px 0;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 15px;
+   font-size: 14px;
+   border-radius: 10px;
+   border-style: none;
+   background-color: #698996;
+   color : #1F1F1F;
+   font-family: 'Oxygen', sans-serif;
+   font-weight: 700;
+   animation-name: anim;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   border-color: transparent;
+   text-decoration: none;
+   color : #c5c4bc;
+   /* text-shadow: 2px 2px 2px #5d5b59; */
+   cursor: pointer;
+}
+
+@keyframes anim{
+   0%{
+      box-shadow: 0px 0px 5px #adaead;
+   }
+   50% {
+      box-shadow: 0px 0px 15px #adaead;
+   }
+   100%{
+      box-shadow: 0px 0px 5px #adaead;
+   }
+}
+.excuse{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px auto;
+   padding: 25px;
+   max-width: 700px;
+   min-height:100px ;
+   letter-spacing: 1px;
+   background-color: #470810;
+   color : #a2a0a0;
+   border-radius: 5px;
+   box-shadow: 5px 5px 25px rgb(64, 63, 63);
+}
+footer{
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   width: 400px;
+   transform: translateX(-50%);
+   font-size: 14px;
+   line-height: 10px;
+   margin-top: 100px;
+   color: #a2a0a0;;
+   text-align: center;
+  
+}
+/* .excuse p::before{
+   content: "   ";
+   margin-left: 20px;
+} */
+@media screen and (max-width:450px)
+{
+   .excuse{
+      margin: 20px 0;
+      width: 100%;
+   }
+} 
