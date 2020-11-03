@@ -6,13 +6,13 @@
 body{
    position: relative;
    width: 100%;
-   min-height: 700px;
+   /* min-height: 800px; */
    margin: 0px;
    padding: 0px;
    font-family: 'Oxygen', sans-serif;
    background-color: #222120;
    background-image: url(website-design-slider-background-stockton.jpg);
-   background-size: auto;
+   background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
 }
@@ -57,7 +57,7 @@ h1{
    border-color: transparent;
    text-decoration: none;
    color : #c5c4bc;
-   /* text-shadow: 2px 2px 2px #5d5b59; */
+   text-shadow: 2px 2px 2px #5d5b59;
    cursor: pointer;
 }
 
@@ -66,7 +66,7 @@ h1{
       box-shadow: 0px 0px 5px #adaead;
    }
    50% {
-      box-shadow: 0px 0px 15px #adaead;
+      box-shadow: 0px 0px 10px #adaead;
    }
    100%{
       box-shadow: 0px 0px 5px #adaead;
@@ -81,32 +81,45 @@ h1{
    max-width: 700px;
    min-height:100px ;
    letter-spacing: 1px;
-   background-color: #470810;
-   color : #a2a0a0;
+   background-color:  #a2a0a0;
+   color : rgb(240, 240, 240);
    border-radius: 5px;
-   box-shadow: 5px 5px 25px rgb(64, 63, 63);
+   box-shadow: 5px 5px 20px rgba(64, 63, 63);
 }
 footer{
-   position: absolute;
+   /* position: absolute;
    bottom: 10px;
-   left: 50%;
-   width: 400px;
-   transform: translateX(-50%);
+   left: 50%; */
+   max-width: 400px;
+   /* transform: translateX(-50%); */
    font-size: 14px;
-   line-height: 10px;
+   line-height: 14px;
+  
+   margin: 200px auto;
    margin-top: 100px;
    color: #a2a0a0;;
    text-align: center;
   
 }
+
 /* .excuse p::before{
    content: "   ";
    margin-left: 20px;
 } */
 @media screen and (max-width:450px)
 {
+   h1{
+      font-size: 35px;
+   }
+   h2{
+      font-size: 22px;
+      padding: 20px;
+   }
    .excuse{
       margin: 20px 0;
       width: 100%;
+   }
+   footer{
+      max-width: 270px;
    }
 } 
